@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="pvr.ipworldtv" version="1.11.12" name="PVR IPWORLDTV Client" provider-name="gotekno">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="1.9.6"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="pvr.ipworldtv.so"
+    library_osx="pvr.ipworldtv.dylib"
+    library_freebsd="pvr.ipworldtv.so"
+    library_windx="pvr.ipworldtv.dll"
+    library_android="libpvr.ipworldtv.so" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_US">Kodi PVR addon for IPWORLDTV support. https://github.com/gk1/pvr.ipworldtv/wiki/IPTV-Simple-Home</summary>
+        <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+        <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
